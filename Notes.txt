@@ -1,3 +1,31 @@
 If not using API KEY
 	It will show 401 error, that means unauthorized error.
 
+Router
+
+index.js
+
+if we want to use routing with button we need to use useHistory ( ) hook
+
+<BrowseRouter>
+<App />
+</BrowseRouter>
+
+create a constant for useHistory()
+ 
+const history = useHistory()
+<button onClick={()=> history.push('/url_path')}> click </button>
+
+or we can use Link instead of button
+
+<Link to='/url_path' > click </Link>
+
+context api - data passed without props mainly used in nested components, avoiding unwanted passing of props.
+globally saved and access anywhere without passing to any component.
+
+medium - for helping website
+
+
+
+
+

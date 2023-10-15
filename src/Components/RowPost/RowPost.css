@@ -16,6 +16,7 @@
 .poster {
   max-height: 250px;
   margin-right: 10px;
+  cursor: pointer;
 }
 .is-small {
   max-height: 150px;
