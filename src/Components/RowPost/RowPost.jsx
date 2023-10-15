@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './RowPost.css'
+import axios, { Axios } from '../../Axios'
+import { API_KEY, baseUrl } from '../Constants/Constants'
 
 function RowPost() {
+
+    useEffect(() => {
+        // getting original movie with api calling, with our API key
+        axios.get(`discover/tv?api_key=${API_KEY}&with_networks=213`).then(resoponse => {
+            console.log(resoponse);
+        }).catch(err => {
+            alert(err)
+        })
+
+    }, [])
+
     return (
         <div className='row-post'>
             <h2>Title</h2>
